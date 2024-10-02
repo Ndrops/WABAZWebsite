@@ -25,9 +25,9 @@ body {
 
 /* Global rule for all paragraphs */
 p {
-    line-height: 1.5;
-    font-size: 1.5rem; /* Use rem for scalable font sizes */
-    margin-bottom: 40px;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 main {
@@ -47,7 +47,7 @@ section {
 }
 
 .logo {
-    width: 250px;
+    width: 250px;  /* Increased for better desktop view */
     height: auto;
     position: absolute;
     top: 20px;
@@ -65,20 +65,20 @@ section {
 }
 
 .overlay-text h1 {
-    font-size: 4.375rem; /* Equivalent to 70px */
-    margin-bottom: 10px;
+    font-size: 4rem; /* Larger for desktop */
+    margin-bottom: 20px;
 }
 
 .join-button, .contact-button, .contact-form button {
     background-color: var(--button-bg);
     color: var(--text-color);
-    padding: 15px 30px;
+    padding: 15px 30px; /* Larger padding for desktop */
     border: none;
     cursor: pointer;
-    font-size: 1.125rem; /* Equivalent to 18px */
+    font-size: 1.125rem;
     font-weight: 600;
     transition: background-color 0.3s ease;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .join-button:hover,
@@ -99,21 +99,17 @@ section {
     align-items: center;
     padding: var(--padding);
     background-color: var(--background-color);
-    height: 100vh;
+    height: auto; /* Allow sections to expand naturally */
 }
 
 .about-text, .mentorship-text, .location-text, .contact-info {
     flex: 1;
     padding-right: 2rem;
-    font-size: 2rem;
-}
-
-.about-text p, .mentorship-text p, .location-text p, .contact-info p {
-    font-size: 1.2rem;
+    font-size: 1.8rem; /* Larger text for desktop */
 }
 
 .about-text h2, .mentorship-text h2, .location-text h2, .contact-info h2 {
-    font-size: 3rem;
+    font-size: 3rem; /* Larger headlines */
     margin-bottom: 1rem;
 }
 
@@ -128,7 +124,7 @@ section {
 
 .location-image iframe {
     width: 100%;
-    height: 500px;
+    height: 500px; /* Larger map for desktop */
     border: 0;
 }
 
@@ -145,26 +141,26 @@ section {
 
 .image-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 30px;
 }
 
 .package {
-    flex: 1 1 auto;
-    max-width: 30%;
+    flex: 1 1 30%;
     text-align: left;
     background-color: var(--background-color);
+    min-width: 250px; /* Ensures packages don't get too small */
 }
 
 .package img {
     width: 100%;
-    height: 450px;
+    height: 350px;
     object-fit: cover;
 }
 
 .package h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 1rem 0;
 }
 
@@ -175,58 +171,53 @@ section {
 
 /* Testimonial Section */
 #testimonial {
-    padding: 10rem;
+    padding: 5rem;
     background-color: #272952;
-    text-align: center;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;  /* Center the testimonial text horizontally */
+    align-items: center;      /* Center the testimonial text vertically */
 }
 
 .testimonial-text {
-    font-size: 2rem;
-    font-style: normal;
-    margin: 0 auto;
-    line-height: 1.2;
+    font-size: 1.8rem;
     max-width: 1000px;
-    padding: 2rem;
+    padding: 1rem;
+    text-align: center;       /* Center the text */
 }
 
 .small-text {
-    font-size: 0.8em;
+    font-size: 0.9rem;
     display: block;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 /* Contact Form Section */
 #contact-form {
     display: flex;
-    align-items: flex-start;
+    gap: 4rem;
     padding: var(--padding);
     background-color: #272952;
-    height: 100vh;
-    gap: 4rem;
+    height: auto;
 }
 
 .form-row {
     display: flex;
     justify-content: space-between;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .contact-info {
     flex: 1;
     padding-left: 2rem;
-    order: 2;
 }
 
 .contact-form {
     flex: 1;
-    order: 1;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .contact-form label {
@@ -241,7 +232,6 @@ section {
     margin-bottom: 10px;
     padding: 10px;
     border: none;
-    border-radius: 0;
     width: 100%;
     font-size: 1rem;
     background-color: #3b3d7a;
@@ -260,30 +250,13 @@ section {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 0; /* Remove rounded corners */
     margin-top: 10px;
-    white-space: nowrap;
 }
 
 .contact-form button:hover {
     background-color: var(--button-bg-hover);
 }
 
-.contact-form input:invalid,
-.contact-form textarea:invalid {
-    border: none;
-}
-
-.contact-form input:valid,
-.contact-form textarea:valid {
-    border: none;
-}
-
-.form-row .form-group {
-    flex: 1;
-}
-
-/* reCAPTCHA Styling */
 .recaptcha-and-submit {
     display: flex;
     justify-content: space-between;
@@ -299,13 +272,10 @@ section {
 .recaptcha-disclaimer {
     font-size: 0.6rem;
     color: #ccc;
-    text-align: left;
-    margin-top: 10px;
 }
 
 .recaptcha-disclaimer a {
     color: var(--button-bg);
-    text-decoration: none;
 }
 
 .recaptcha-disclaimer a:hover {
@@ -317,69 +287,60 @@ footer {
     background-color: #272952;
     color: var(--text-color);
     padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    bottom: 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.footer-logo img {
-    width: 100px;
-    height: auto;
-}
-
-.footer-text {
-    font-size: 0.8rem;
     text-align: center;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
+/* Media Queries for Responsiveness */
+
+/* For medium screens (tablets, small laptops) */
+@media (max-width: 1024px) {
+    .overlay-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
     .about-text, .mentorship-text, .location-text, .contact-info {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
-    .overlay-text h1 {
-        font-size: 3rem;
-    }
-
-    .form-row {
-        flex-direction: column;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-logo img {
-        margin-bottom: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .overlay-text h1 {
+    .about-text h2, .mentorship-text h2, .location-text h2, .contact-info h2 {
         font-size: 2.5rem;
     }
 
+    .package {
+        flex: 1 1 45%; /* Adjusts packages to take more space on medium screens */
+    }
+
+    .package img {
+        height: 300px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
     .about-text, .mentorship-text, .location-text, .contact-info {
         font-size: 1.2rem;
+        padding-right: 0;
+        text-align: center;
     }
 
     .about-text h2, .mentorship-text h2, .location-text h2, .contact-info h2 {
         font-size: 2rem;
     }
 
-    .testimonial-text {
-        font-size: 1.5rem;
+    .about-image, .mentorship-image, .location-image {
+        flex-direction: column;
+    }
+
+    #about, #mentorship, #location, #contact-form {
+        flex-direction: column;
+    }
+
+    .overlay-text h1 {
+        font-size: 2.5rem;
     }
 
     .form-row {
@@ -391,7 +352,11 @@ footer {
         align-items: center;
     }
 
-    .footer-logo img {
-        margin-bottom: 1rem;
+    #core-packages .package {
+        flex: 1 1 100%; /* Stack packages vertically on mobile */
+    }
+
+    .testimonial-text {
+        font-size: 1.2rem;
     }
 }
