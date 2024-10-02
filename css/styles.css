@@ -196,6 +196,9 @@ section {
     background-color: #272952;
     text-align: center;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonial-text {
@@ -205,6 +208,7 @@ section {
     line-height: 1.2;
     max-width: 1000px;
     padding: 2rem;
+    text-align: center;
 }
 
 .small-text {
