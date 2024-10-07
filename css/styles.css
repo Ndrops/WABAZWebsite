@@ -459,6 +459,18 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+    
     .about-text, .mentorship-text, .location-text, .contact-info {
         font-size: 1.5rem;
     }
