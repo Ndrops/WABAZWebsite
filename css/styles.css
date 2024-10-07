@@ -148,6 +148,23 @@ section {
     .footer-logo img {
         margin-bottom: 1rem;
     }
+
+    /* Core Packages Section */
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem; /* Add some space between packages */
+    }
+
+    .package img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* For very small screens */
@@ -196,6 +213,11 @@ section {
 
     .footer-logo img {
         margin-bottom: 1rem;
+    }
+
+    /* Core Packages Section */
+    .package {
+        margin-bottom: 1.5rem; /* Adjust spacing for smaller screens */
     }
 }
 
