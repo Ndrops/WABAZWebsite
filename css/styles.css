@@ -106,14 +106,14 @@ section {
         padding: 15px 0; /* Adjust padding to make it taller */
     }
 
-    @media (max-width: 480px) {
-        .join-button, .contact-button, .contact-form button {
-            width: 100%; /* Take full width on very small screens */
-            max-width: 100%; /* Remove max-width for full width */
-            padding: 15px 0; /* Keep padding consistent */
-            margin: 0 auto; /* Ensure button is centered */
-        }
+@media (max-width: 480px) {
+    .join-button, .contact-button, .contact-form button {
+        width: 100%; /* Take full width on very small screens */
+        max-width: 100%; /* Remove max-width for full width */
+        padding: 15px 0; /* Keep padding consistent */
+        margin: 0 auto; /* Ensure button is centered */
     }
+}
 
     /* Core Packages Section */
     .image-container {
