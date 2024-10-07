@@ -257,7 +257,7 @@ section {
 
 .image-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 60px;
 }
@@ -459,6 +459,11 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     img {
         display: block;
         margin-left: auto;
