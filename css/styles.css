@@ -81,7 +81,7 @@ section {
     text-decoration: none; /* Remove underline */
     text-align: center; /* Ensure text is centered */
     display: block;
-    margin: 0 auto;
+    max-width: 150px; /* Limit the button width on larger screens */
 }
 
 .join-button:hover,
