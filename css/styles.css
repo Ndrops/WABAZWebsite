@@ -99,11 +99,12 @@ section {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .join-button {
-        width: 90%; /* Adjust the width as needed */
-        margin: 0 auto; /* Center the button */
-        padding: 0 10px;
+    .join-button, .contact-button {
+        width: 100%; /* Make buttons full width */
+        margin: 0 auto; /* Center the buttons */
+        padding: 15px 0; /* Adjust padding as needed */
     }
+}
 
     /* Core Packages Section */
     .image-container {
