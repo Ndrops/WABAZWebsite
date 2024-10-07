@@ -100,8 +100,9 @@ section {
 /* Mobile Styles */
 @media (max-width: 768px) {
     .join-button, .contact-button {
-        width: 100%; /* Make buttons full width */
+        width: 90%; /* Make buttons full width */
         margin: 0 auto; /* Center the buttons */
+        max-width: 400px; /* Ensure the button has a nice long look */
         padding: 15px 0; /* Adjust padding as needed */
     }
 }
