@@ -99,21 +99,13 @@ section {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .join-button, .contact-button {
-        width: 90%; /* Make buttons full width */
-        margin: 0 auto; /* Center the buttons */
-        max-width: 900px; /* Ensure the button has a nice long look */
-        padding: 15px 0; /* Adjust padding as needed */
-    }
-}
-
-@media (max-width: 480px) {
     .join-button, .contact-button, .contact-form button {
-        width: 100%; /* Take full width on very small screens */
-        padding: 15px 0; /* Increase padding for a more prominent look */
-        max-width: 100%; /* Remove max-width on very small screens */
+        width: 90%; /* Adjust the width as needed */
+        max-width: 400px; /* Ensure the button has a nice long look */
+        margin: 0 auto; /* Center the buttons */
+        padding: 15px 0; /* Adjust padding to make it taller */
     }
-}
+
     /* Core Packages Section */
     .image-container {
         display: flex;
