@@ -152,53 +152,35 @@ section {
 
 /* For very small screens */
 @media (max-width: 480px) {
-    .join-button, .contact-button, .contact-form button {
-        width: 100%; /* Take full width on very small screens */
-        max-width: 100%; /* Remove max-width for full width */
-        padding: 15px 0; /* Keep padding consistent */
-        margin: 0 auto; /* Ensure button is centered */
+    .join-button,
+    .contact-button,
+    .contact-form button {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 0;
+        margin: 0 auto;
     }
 
     .overlay-text h1 {
         font-size: 2.5rem;
     }
 
-    .about-text, .mentorship-text, .location-text, .contact-info {
+    .about-text,
+    .mentorship-text,
+    .location-text,
+    .contact-info {
         font-size: 1.2rem;
     }
 
-    .about-text h2, .mentorship-text h2, .location-text h2, .contact-info h2 {
+    .about-text h2,
+    .mentorship-text h2,
+    .location-text h2,
+    .contact-info h2 {
         font-size: 2rem;
-    }
-
-    /* Core Packages Section */
-    .image-container {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .package {
-        width: 100%; /* Full width packages */
-        text-align: center;
-    }
-
-    .package img {
-        height: auto;
-        width: 100%;
     }
 
     .testimonial-text {
         font-size: 1.5rem;
-    }
-
-    /* Stack elements in about, mentorship, and location sections */
-    #about, #mentorship, #location, #contact-form {
-        flex-direction: column;
-    }
-
-    .about-image, .mentorship-image, .location-image {
-        margin-top: 1rem;
     }
 
     .form-row {
@@ -207,18 +189,13 @@ section {
         width: 100%;
     }
 
-    /* Make the contact button larger and centered */
-    .contact-button {
-        width: 100%; /* Full width */
-        padding: 15px 0; /* Increase padding for better tap area */
-        text-align: center;
-        max-width: 400px; /* Ensure the button is long */
-    }
-
-    /* Footer */
     .footer-content {
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer-logo img {
+        margin-bottom: 1rem;
     }
 }
 
